@@ -1,0 +1,26 @@
+[package]
+name = "FlippingPlanner"
+version = "0.5.0"
+authors = ["Tonza <moonshieldster@gmail.com>"]
+
+[lib]
+name = "PoeFlippingLib"
+path = "src/lib.rs"
+crate-type = ["rlib","dylib"]
+[[bin]]
+name = "POE_FP"
+path = "src/main.rs"
+
+[dependencies]
+reqwest = "^0.8.6"
+regex = "^1"
+mysql = "14.0.0"
+serde = "1"
+serde_json = "1.0"
+serde_derive = "^1"
+itertools = "*"
+rayon = "1.0.2"
+time = "*"
+chrono = "0.4.5"
+log = "0.4"
+simplelog = "^0.5.0"
